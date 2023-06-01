@@ -1,113 +1,119 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-export default function Home() {
+import { projectsData } from "@/utils/projectsData";
+import Link from "next/link";
+import SkillsDisplay from "@/components/skills-display";
+export default function MainPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <div id="wrapper">
+      <div id="home" className="px-60 p-10 bg-navy">
+        <h1 className="text-5xl font-thin text-white">
+          <span>Good day, I&apos;m Marcos</span>
+          <br />
+          I&apos;m a <span className="font-bold">FrontEnd Engineer !</span>
+          <br />
+          and
+          <span className="mt-2"> Content Creator</span>
+        </h1>
+      </div>
+
+      {/* About Section */}
+      <div id="about" className="px-60 p-10 bg-beige">
+        <h2 className="text-4xl font-thin text-white">ABOUT</h2>
+        <p className="font-extralight mt-2 text-txcolor">Who is Marcos ?</p>
+
+        <div className="flex justify-between ">
+          <div className="mt-10">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/me.jpeg"
+              alt="me"
+              className=" rounded-full"
+              width={280}
+              height={280}
             />
-          </a>
+          </div>
+          <div className="flex flex-col gap-5 w-2/3">
+            <h3 className="text-3xl text-navy font-bold">
+              A really curious Front-End Developer with some love for UX
+            </h3>
+            <p className="text-lg font-serif text-txcolor">
+              Im passionate about bringing both the technical and visual aspects
+              of projects to life.I always love to think about the user
+              experience,the right metrics , and also clean and acessible code
+              .Im really focused in the details, and think that code should be
+              always the more simple as possible, i believe that less is more,
+              following always the{" "}
+              <Link
+                href="http://lawsofsimplicity.com/"
+                className="text-navy hover:text-white hover:bg-navy transition-colors"
+              >
+                Laws of Simplicity
+              </Link>
+            </p>
+            <p className="text-lg font-serif text-txcolor">
+              Im a computer science student from the{" "}
+              <Link
+                href="https://www.anchieta.br/"
+                className="text-navy hover:text-white hover:bg-navy transition-colors"
+              >
+                Anchieta University
+              </Link>
+              , a university localized in Jundiai, city of Brazil, i also have
+              the certified of my skills from{" "}
+              <Link
+                href="https://www.algoexpert.io/frontend/product"
+                className="text-navy hover:text-white hover:bg-navy transition-colors"
+              >
+                Front End Expert
+              </Link>{" "}
+              and also i learned a lot in{" "}
+              <Link
+                href="https://frontendmasters.com/"
+                className="text-navy hover:text-white hover:bg-navy transition-colors"
+              >
+                Front End Masters
+              </Link>
+            </p>
+            <p className="text-lg font-serif text-txcolor">
+              I love create,learn, explore new ideas and topics and also
+              understand how to make the things i love in even better fashion. I
+              currently doing a lot of challenges from{" "}
+              <Link
+                href="https://www.algoexpert.io/"
+                className="text-navy hover:text-white hover:bg-navy transition-colors"
+              >
+                Algo Expert
+              </Link>{" "}
+              to improve my skills in data structures and algorithms. Im
+              avaliable for freelancers as well so feel free to reach out and
+              say hello !
+            </p>
+            <a
+              href="#contact"
+              className="hover:animate-bounce underline underline-offset-8 w-40 cursor-pointer font-thin text-2xl"
+            >
+              Get In Touch !
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* Skills Section */}
+      <div id="skills" className="p-10 px-60 bg-navy">
+        <h2 className="text-4xl font-thin text-white">SKILLS & TOOLS</h2>
+        <p className="font-extralight mt-2 text-txcolor">My Toolbox & Things I Can Do</p>
+        <span className="font-extralight mt-4 text-txcolor">
+          The skills, tools and technologies i use to bring products to life:
+        </span>
+
+        <SkillsDisplay />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* my work (projects) */}
+      <div id="work" className="p-10 px-60 bg-beige">
+        <h2>WORK</h2>
+        <p>A Selection of stuff i&apos;ve Built</p>
       </div>
-    </main>
-  )
+    </div>
+  );
 }
