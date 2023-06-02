@@ -3,6 +3,7 @@ import Image from "next/image";
 import { projectsData } from "@/utils/projectsData";
 import Link from "next/link";
 import SkillsDisplay from "@/components/skills-display";
+import ContactForm from "@/components/contact-form";
 export default function MainPage() {
   return (
     <div id="wrapper">
@@ -101,7 +102,9 @@ export default function MainPage() {
       {/* Skills Section */}
       <div id="skills" className="p-10 px-60 bg-navy">
         <h2 className="text-4xl font-thin text-white">SKILLS & TOOLS</h2>
-        <p className="font-extralight mt-2 text-txcolor">My Toolbox & Things I Can Do</p>
+        <p className="font-extralight mt-2 text-txcolor">
+          My Toolbox & Things I Can Do
+        </p>
         <span className="font-extralight mt-4 text-txcolor">
           The skills, tools and technologies i use to bring products to life:
         </span>
@@ -113,6 +116,11 @@ export default function MainPage() {
       <div id="work" className="p-10 px-60 bg-beige">
         <h2>WORK</h2>
         <p>A Selection of stuff i&apos;ve Built</p>
+      </div>
+
+      {/* contact */}
+      <div>
+        <ContactForm />
       </div>
     </div>
   );
