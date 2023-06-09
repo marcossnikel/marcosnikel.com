@@ -1,8 +1,10 @@
 "use client";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
-
+import { SiGmail } from "react-icons/si";
 emailjs.init("Mycgz4XoGLanX2VYb");
+const SERVICE_ID = "service_pla87qo";
+const TEMPLATE_ID = "template_3oxfxin";
 
 export default function ContactForm() {
   const { register, handleSubmit, reset } = useForm({
@@ -21,7 +23,7 @@ export default function ContactForm() {
     };
 
     emailjs
-      .send("service_pla87qo", "template_3oxfxin", templateParams)
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams)
       .then(() => {
         console.log("email sent sucessfully");
         reset();
@@ -32,10 +34,14 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex  w-full p-5 gap-4 justify-center flex-col"
+    >
       <input
         {...register("name", { required: "Please tell me your name :)" })}
         type="text"
+        className="outline-none border-b-4 border-beige rounded-lg p-2"
         placeholder="name"
       />
       <input
@@ -47,14 +53,21 @@ export default function ContactForm() {
           },
         })}
         type="email"
+        className="outline-none border-b-4 border-beige rounded-lg p-2 "
         placeholder="email"
       />
-      <input
+      <textarea
         {...register("message", { required: true, minLength: 20 })}
-        type="text"
         placeholder="message"
+        className="outline-none border-b-4 border-beige rounded-lg p-2"
       />
-      <button type="submit">send email</button>
+      <button
+        type="submit"
+        className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-beige font-medium p-2 text-navy hover:bg-navy hover:text-txcolor"
+      >
+        Send Email !
+        <SiGmail />
+      </button>
     </form>
   );
 }
