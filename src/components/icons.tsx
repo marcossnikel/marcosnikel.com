@@ -2,7 +2,7 @@ export const ReactIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       viewBox="0 0 512 512"
       style={{ fill: "white" }}
     >
@@ -15,7 +15,7 @@ export const HtmlIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       viewBox="0 0 384 512"
       style={{ fill: "white" }}
     >
@@ -28,7 +28,7 @@ export const CssIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       viewBox="0 0 384 512"
       style={{ fill: "white" }}
     >
@@ -41,7 +41,7 @@ export const GitHubIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       viewBox="0 0 496 512"
       style={{ fill: "white" }}
     >
@@ -54,7 +54,7 @@ export const GitIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       viewBox="0 0 448 512"
       style={{ fill: "white" }}
     >
@@ -67,7 +67,7 @@ export const NodeIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       viewBox="0 0 448 512"
       style={{ fill: "white" }}
     >
@@ -80,7 +80,7 @@ export const SassIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       viewBox="0 0 640 512"
       style={{ fill: "white" }}
     >
@@ -93,7 +93,7 @@ export const JavascriptIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="4em"
+      height="6em"
       style={{ fill: "white" }}
       viewBox="0 0 448 512"
     >
