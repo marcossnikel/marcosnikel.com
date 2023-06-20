@@ -36,7 +36,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex  w-full p-5 gap-4 justify-center flex-col"
+      className="flex  w-full mt-4 gap-4 justify-center flex-col"
     >
       <input
         {...register("name", { required: "Please tell me your name :)" })}
@@ -63,7 +63,7 @@ export default function ContactForm() {
       />
       <button
         type="submit"
-        className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-beige font-medium p-2 text-navy hover:bg-navy hover:text-txcolor"
+        className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-beige font-medium p-2 text-navy hover:bg-navy hover:text-white"
       >
         Send Email !
         <SiGmail />

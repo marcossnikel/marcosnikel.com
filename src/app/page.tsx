@@ -36,9 +36,9 @@ export default function MainPage() {
       <div id="about" className="bg-beige">
         <Container>
           <h2 className="text-4xl font-thin text-white">ABOUT</h2>
-          <p className="font-semibold mt-2 text-navy">Who is Marcos ?</p>
+          <p className=" mt-2 text-xl text-txcolor ">Who is Marcos ?</p>
 
-          <div className="flex justify-between ">
+          <div className="flex flex-col gap-5 md:flex-row  justify-between ">
             <div className="mt-10">
               <Image
                 src="/me.jpeg"
@@ -48,17 +48,17 @@ export default function MainPage() {
                 height={280}
               />
             </div>
-            <div className="flex flex-col gap-5 w-2/3">
-              <h3 className="text-3xl text-navy font-bold">
-                A really curious Front-End Developer with some love for UX
+            <div className="flex items-center flex-col gap-5 w-2/3">
+              <h3 className="text-lg  md:text-3xl text-navy font-bold">
+                A really curious Front-End Developer with some love for UX.
               </h3>
               <p className="text-lg font-serif text-txcolor">
-                Im passionate about bringing both the technical and visual
+                I&apos;m passionate about bringing both the technical and visual
                 aspects of projects to life.I always love to think about the
                 user experience,the right metrics , and also clean and acessible
-                code .Im really focused in the details, and think that code
-                should be always the more simple as possible, i believe that
-                less is more, following always the{" "}
+                code .I&apos;m really focused in the details, and think that
+                code should be always the more simple as possible, i believe
+                that less is more, following always the{" "}
                 <Link
                   href="http://lawsofsimplicity.com/"
                   className="text-navy hover:text-white hover:bg-navy transition-colors"
@@ -67,7 +67,7 @@ export default function MainPage() {
                 </Link>
               </p>
               <p className="text-lg font-serif text-txcolor">
-                Im a computer science student from the{" "}
+                I&apos;m a computer science student from the{" "}
                 <Link
                   href="https://www.anchieta.br/"
                   className="text-navy hover:text-white hover:bg-navy transition-colors"
@@ -91,17 +91,17 @@ export default function MainPage() {
                 </Link>
               </p>
               <p className="text-lg font-serif text-txcolor">
-                I love create,learn, explore new ideas and topics and also
+                I love to create,learn, explore new ideas and topics and also
                 understand how to make the things i love in even better fashion.
-                I currently doing a lot of challenges from{" "}
+                I am currently doing a lot of challenges from{" "}
                 <Link
                   href="https://www.algoexpert.io/"
                   className="text-navy hover:text-white hover:bg-navy transition-colors"
                 >
                   Algo Expert
                 </Link>{" "}
-                to improve my skills in data structures and algorithms. Im
-                avaliable for freelancers as well so feel free to reach out and
+                to improve my skills in data structures and algorithms. I&apos;m
+                avaliable for freelancing as well so feel free to reach out and
                 say hello !
               </p>
               <a
@@ -119,11 +119,9 @@ export default function MainPage() {
       <div id="skills" className="bg-navy">
         <Container>
           <h2 className="text-4xl font-thin text-white">SKILLS & TOOLS</h2>
-          <p className="font-semibold mt-2 text-beige">
-            My Toolbox & Things I Can Do
-          </p>
-          <span className="font-semibold mt-4 text-beige">
-            Skills , tools and techonologies i use to bring products to life!
+          <p className=" mt-2 text-xl text-txcolor">My Toolbox</p>
+          <span className=" mt-2 text-txcolor text-sm">
+            The toolbox I use to bring products to life
           </span>
 
           <SkillsDisplay />
@@ -134,8 +132,8 @@ export default function MainPage() {
       <div id="work" className="bg-beige">
         <Container>
           <h2 className="text-4xl font-thin text-white">WORK</h2>
-          <p className="font-extralight mt-2 text-txcolor">
-            A Selection of stuff i&apos;ve Built
+          <p className="mt-2 text-xl text-txcolor">
+            A selection of stuff I built
           </p>
           {projectsData ? (
             projectsData.map((project) => (
@@ -143,15 +141,15 @@ export default function MainPage() {
                 key={project.title}
                 className="mt-5 flex flex-col items-center md:flex-row justify-between gap-4"
               >
-                <div className="w-52 h-52 md:h-96 md:w-96 relative">
+                <div className="rounded w-72 h-72 flex-1 md:h-96 md:w-96 relative">
                   <Image
                     src={project.imagePath}
                     alt="Project image"
                     fill
-                    className="rounded-md object-contain"
+                    className=" rounded-lg object-contain"
                   />
                 </div>
-                <div className="flex flex-col justify-between">
+                <div className="flex flex-1 flex-col">
                   <h2 className="text-3xl font-bold text-txcolor">
                     {project.title}
                   </h2>
@@ -163,7 +161,7 @@ export default function MainPage() {
                       rel="noreferrer nofollow"
                       target="_blank"
                       className="bg-navy p-4 rounded-lg hover:bg-vintage"
-                      href={project.githubRepo}
+                      href={project.projectLink}
                     >
                       View it Here
                     </a>
@@ -171,7 +169,7 @@ export default function MainPage() {
                       rel="noreferrer nofollow"
                       target="_blank"
                       className="bg-navy p-4 rounded-lg hover:bg-vintage"
-                      href={project.projectLink}
+                      href={project.githubRepo}
                     >
                       View Github Repo
                     </a>
@@ -190,17 +188,23 @@ export default function MainPage() {
         <Container>
           <h2 className="text-4xl text-white font-thin">CONTACT</h2>
           <span className="text-lg text-beige font-semibold">Get In Touch</span>
-          <p className="font-thin text-txcolor w-72">
-            Lets chat !! If you want my resume you can send-me a message or just{" "}
-            <a>Click Here !!</a>, we can build somehing amazing together ! I
-            would love to hear from you.
+          <p className="text-xl text-txcolor mt-2 w-2/3">
+            Lets chat, If you want my resume you can send-me a message or just{" "}
+            <a
+              className="text-beige hover:underline cursor-pointer"
+              // onClick={() => downloadResume()}
+            >
+              Click Here
+            </a>
+            , we can build somehing amazing together ! I would love to hear from
+            you.
           </p>
           <br />
-          <p className="font-serif">
+          <p className="text-txcolor text-xl">
             Fill in your info in the form below and i look forward to hearing
             for you.
           </p>
-          <div className="flex flex-col md:flex-row justify-between p-5">
+          <div className="flex flex-col gap-4 md:flex-row justify-between">
             <ContactForm />
             <div className="flex flex-col justify-center gap-10">
               <p className="text-white font-thin">

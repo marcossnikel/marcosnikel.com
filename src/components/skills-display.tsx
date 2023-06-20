@@ -21,7 +21,10 @@ import {
 } from "@/components/icons";
 export default function SkillsDisplay() {
   return (
-    <div id="icons" className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-4">
+    <div
+      id="icons"
+      className="grid grid-cols-2 items-center md:grid-cols-3 gap-8 mt-4"
+    >
       <div className="flex flex-col items-center">
         <ReactIcon />
         <p className="text-2xl font-thin text-white">React</p>
@@ -36,7 +39,7 @@ export default function SkillsDisplay() {
       </div>
       <div className="flex flex-col items-center">
         <GitHubIcon />
-        <p className="text-2xl font-thin text-white">Git Hub</p>
+        <p className="text-2xl font-thin text-white">GitHub</p>
       </div>
       <div className="flex flex-col items-center">
         <GitIcon />
@@ -44,11 +47,11 @@ export default function SkillsDisplay() {
       </div>
       <div className="flex flex-col items-center">
         <JavascriptIcon />
-        <p className="text-2xl font-thin text-white">Javascript</p>
+        <p className="text-2xl font-thin text-white">JavaScript</p>
       </div>
       <div className="flex flex-col items-center">
         <SiTypescript style={{ fill: "white" }} className="w-20 h-20 m-0 p-0" />
-        <p className="text-2xl font-thin text-white">Typescript</p>
+        <p className="text-2xl font-thin text-white">TypeScript</p>
       </div>
       <div className="flex flex-col items-center">
         <NodeIcon />
