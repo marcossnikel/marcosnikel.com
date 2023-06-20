@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar";
 config.autoAddCss = false;
 
 export const metadata = {
-  title: "nikeldev",
+  title: "marcosnikel",
   description: "portfolio to showcase my skills",
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar/>
+        <Navbar />
         {children}
       </body>
     </html>
