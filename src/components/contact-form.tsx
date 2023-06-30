@@ -41,7 +41,7 @@ export default function ContactForm() {
       <input
         {...register("name", { required: "Please tell me your name :)" })}
         type="text"
-        className="outline-none border-b-4 border-beige rounded-lg p-2"
+        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2"
         placeholder="name"
       />
       <input
@@ -53,17 +53,17 @@ export default function ContactForm() {
           },
         })}
         type="email"
-        className="outline-none border-b-4 border-beige rounded-lg p-2 "
+        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 "
         placeholder="email"
       />
       <textarea
         {...register("message", { required: true, minLength: 20 })}
         placeholder="message"
-        className="outline-none border-b-4 border-beige rounded-lg p-2"
+        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2"
       />
       <button
         type="submit"
-        className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-beige font-medium p-2 text-navy hover:bg-navy hover:text-white"
+        className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
       >
         Send Email !
         <SiGmail />

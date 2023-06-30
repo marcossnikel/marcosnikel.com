@@ -18,7 +18,12 @@ module.exports = {
         beige: "#cbb279",
         vintage: "#e1d4bb",
         gray: "#eeeeee",
-        txcolor : "#252525",
+        txcolor: "#252525",
+      },
+      fontFamily: {
+        poppins: ["Poppins"],
+        mada: ["Mada"],
+        crimson: ["Crimson Text"],
       },
     },
   },
