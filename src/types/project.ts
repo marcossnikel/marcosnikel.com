@@ -1,4 +1,4 @@
-export type Project = {
+export type IProject = {
   title: string;
   description: string;
   repositoryUrl: string;

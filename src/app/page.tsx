@@ -2,15 +2,10 @@ import Image from "next/image";
 import { ProjectContainer } from "@/components/project-container";
 import { projectsData } from "@/utils/projectsData";
 import Link from "next/link";
-import {
-  SiLinkedin,
-  SiTwitter,
-  SiGithub,
-  SiInstagram,
-  SiDevdotto,
-} from "react-icons/si";
+
 import SkillsDisplay from "@/components/skills-display";
 import ContactForm from "@/components/contact-form";
+import SocialLinks from "@/components/social-links";
 
 function Container({ children }: { children: React.ReactNode }) {
   return <div className="p-10 mx-auto max-w-6xl">{children}</div>;
@@ -108,7 +103,7 @@ export default function MainPage() {
               </p>
               <a
                 href="#contact"
-                className="font-poppins text-yellow-400 hover:animate-bounce underline underline-offset-8 w-40 cursor-pointer font-thin text-2xl"
+                className=" text-yellow-400 hover:animate-bounce underline underline-offset-8 w-40 cursor-pointer font-mada text-2xl"
               >
                 Get In Touch !
               </a>
@@ -131,7 +126,7 @@ export default function MainPage() {
       {/* my work (projects) */}
       <div id="work" className="bg-txcolor border-t-4 border-yellow-400">
         <Container>
-          <h2 className="text-4xl font-poppins text-white">WORK</h2>
+          <h2 className="text-4xl font-poppins text-yellow-400">WORK</h2>
           <p className="mt-2 text-xl text-white font-crimson">
             A selection of stuff I built
           </p>
@@ -158,7 +153,7 @@ export default function MainPage() {
         <Container>
           <h2 className="text-4xl text-yellow-400 font-poppins">CONTACT</h2>
           <span className="text-lg text-white font-crimson">Get In Touch</span>
-          <p className="text-xl text-white font-mada mt-2 w-2/3">
+          <p className="text-xl text-white font-mada mt-2 leading-4">
             Lets chat, If you want my resume you can send-me a message or just{" "}
             <a
               className="text-yellow-400 hover:underline cursor-pointer"
@@ -174,46 +169,12 @@ export default function MainPage() {
             Fill in your info in the form below and i look forward to hearing
             for you.
           </p>
-          <div className="flex flex-col gap-4 md:flex-row justify-between">
+          <div className="flex flex-col gap-4 md:flex-row justify-center">
             <ContactForm />
-            <div className="flex flex-col justify-center  gap-5">
-              <p className="text-white text-xlfont-mada">
-                Feeling social ? Find me on these online spaces too
-              </p>
-              <div className="flex gap-5">
-                <a href="https://www.linkedin.com/in/mnikel/" target="_blank">
-                  <SiLinkedin
-                    style={{ fill: "white" }}
-                    className="w-6 h-w-6 m-0 p-0 hover:w-7 hover:h-7 transition-all"
-                  />
-                </a>
-                <a href="https://twitter.com/marcosnikeldev" target="_blank">
-                  <SiTwitter
-                    style={{ fill: "white" }}
-                    className="w-6 h-w-6 m-0 p-0 hover:w-7 hover:h-7 transition-all"
-                  />
-                </a>
-                <a href="https://github.com/marcossnikel" target="_blank">
-                  <SiGithub
-                    style={{ fill: "white" }}
-                    className="w-6 h-w-6 m-0 p-0 hover:w-7 hover:h-7 transition-all"
-                  />
-                </a>
-                <a href="https://www.instagram.com/nikeelwz/" target="_blank">
-                  <SiInstagram
-                    style={{ fill: "white" }}
-                    className="w-6 h-w-6 m-0 p-0 hover:w-7 hover:h-7 transition-all"
-                  />
-                </a>
-                <a href="https://dev.to/marcossnikel" target="_blank">
-                  <SiDevdotto
-                    style={{ fill: "white" }}
-                    className="w-6 h-w-6 m-0 p-0 hover:w-7 hover:h-7 transition-all"
-                  />
-                </a>
-              </div>
-            </div>
           </div>
+          <footer>
+            <SocialLinks />
+          </footer>
         </Container>
       </div>
     </div>

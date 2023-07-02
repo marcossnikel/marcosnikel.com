@@ -2,6 +2,7 @@
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { SiGmail } from "react-icons/si";
+import Button from "./button";
 emailjs.init("Mycgz4XoGLanX2VYb");
 const SERVICE_ID = "service_pla87qo";
 const TEMPLATE_ID = "template_3oxfxin";
@@ -36,12 +37,12 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex  w-full mt-4 gap-4 justify-center flex-col"
+      className="flex  w-full mt-4 gap-4 justify-center flex-col items-center"
     >
       <input
         {...register("name", { required: "Please tell me your name :)" })}
         type="text"
-        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2"
+        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 w-full"
         placeholder="name"
       />
       <input
@@ -53,21 +54,17 @@ export default function ContactForm() {
           },
         })}
         type="email"
-        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 "
+        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 w-full"
         placeholder="email"
       />
       <textarea
         {...register("message", { required: true, minLength: 20 })}
         placeholder="message"
-        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2"
+        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 w-full"
       />
-      <button
-        type="submit"
-        className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
-      >
-        Send Email !
+      <Button text="Send Email !">
         <SiGmail />
-      </button>
+      </Button>
     </form>
   );
 }

@@ -1,4 +1,4 @@
-import { Project } from "@/types/project";
+import { IProject } from "@/types/project";
 import Image from "next/image";
 
 export function ProjectContainer({
@@ -9,7 +9,7 @@ export function ProjectContainer({
   projectUrl,
   stacks,
   repositoryUrl,
-}: Project) {
+}: IProject) {
   return (
     <div
       key={id}
@@ -32,18 +32,18 @@ export function ProjectContainer({
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="bg-white p-2 rounded-md hover:bg-yellow-400  font-crimson  transition-all"
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
                 href={projectUrl}
               >
-                View it Here
+                Project
               </a>
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="bg-white p-2 rounded-md hover:bg-yellow-400  font-crimson transition-all"
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
                 href={repositoryUrl}
               >
-                View Github Repo
+                Repository
               </a>
             </div>
           </div>
@@ -57,18 +57,18 @@ export function ProjectContainer({
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="bg-white p-2 rounded-md hover:bg-yellow-400  font-crimson  transition-all"
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
                 href={projectUrl}
               >
-                View it Here
+                Project
               </a>
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="bg-white p-2 rounded-md hover:bg-yellow-400  font-crimson transition-all"
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
                 href={repositoryUrl}
               >
-                View Github Repo
+                Repository
               </a>
             </div>
           </div>
