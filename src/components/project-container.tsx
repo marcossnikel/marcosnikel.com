@@ -17,7 +17,7 @@ export function ProjectContainer({
     >
       {id % 2 == 0 ? (
         <>
-          <div className="rounded w-72 max-h-72 flex-1 md:h-96 md:w-96 relative">
+          <div className="border border-yellow-400 rounded w-72 max-h-72 flex-1 md:h-96 md:w-96 relative">
             <Image
               src={imageUrl}
               alt="Project image"
@@ -72,7 +72,7 @@ export function ProjectContainer({
               </a>
             </div>
           </div>
-          <div className="rounded w-72 max-h-72 flex-1 md:h-96 md:w-96 relative">
+          <div className="rounded w-72 max-h-72 flex-1 md:h-96 md:w-96 relative border border-yellow-400 ">
             <Image
               src={imageUrl}
               alt="Project image"

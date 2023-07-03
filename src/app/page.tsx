@@ -16,13 +16,11 @@ export default function MainPage() {
     <div id="wrapper">
       <div id="home" className="p-10 bg-txcolor">
         <Container>
-          <h1 className="text-5xl font-mada text-yellow-400">
-            <span>Good day, I&apos;m Marcos</span>
-            <br />
-            I&apos;m a <strong>FrontEnd Engineer!</strong>
-            <br />
-            and
-            <span> Content Creator</span>
+          <h1 className="text-5xl font-mada text-yellow-400 text-center">
+            <span className="text-6xl">
+              I&apos;m <strong>Marcos</strong>
+            </span>
+            <br />a <strong>FrontEnd Engineer 🎨</strong>
           </h1>
         </Container>
       </div>
@@ -38,7 +36,7 @@ export default function MainPage() {
           <div className="flex flex-col gap-5 md:flex-row  justify-between ">
             <div className="mt-10">
               <Image
-                src="/me.jpeg"
+                src="/me.png"
                 alt="me"
                 className=" rounded-2xl "
                 width={350}
