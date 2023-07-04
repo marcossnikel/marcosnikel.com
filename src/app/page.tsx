@@ -20,7 +20,7 @@ export default function MainPage() {
             <span className="text-6xl">
               I&apos;m <strong>Marcos</strong>
             </span>
-            <br />a <strong>FrontEnd Engineer 🎨</strong>
+            <br />a <strong>FrontEnd Software Developer 🎨</strong>
           </h1>
         </Container>
       </div>
