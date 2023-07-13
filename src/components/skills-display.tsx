@@ -8,7 +8,10 @@ import {
   SiPostgresql,
   SiSqlite,
   SiMongodb,
+  SiSpringboot,
+  SiAngular,
 } from "react-icons/si";
+import { DiJava } from "react-icons/di";
 import {
   CssIcon,
   GitHubIcon,
@@ -83,6 +86,18 @@ export default function SkillsDisplay() {
       <div className="flex flex-col items-center">
         <SiMongodb style={{ fill: "white" }} className="w-14 h-14 m-0 p-0" />
         <p className="text-2xl font-thin text-white">MongoDB</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <SiAngular style={{ fill: "white" }} className="w-14 h-14 m-0 p-0" />
+        <p className="text-2xl font-thin text-white">Angular</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <DiJava style={{ fill: "white" }} className="w-16 h-16 m-0 p-0" />
+        <p className="text-2xl font-thin text-white">Java</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <SiSpringboot style={{ fill: "white" }} className="w-16 h-16 m-0 p-0" />
+        <p className="text-2xl font-thin text-white">Spring Boot</p>
       </div>
     </div>
   );

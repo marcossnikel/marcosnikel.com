@@ -20,7 +20,7 @@ export default function MainPage() {
             <span className="text-6xl">
               I&apos;m <strong>Marcos</strong>
             </span>
-            <br />a <strong>FrontEnd Software Developer 🎨</strong>
+            <br />a <strong>Software Developer</strong>
           </h1>
         </Container>
       </div>
@@ -45,7 +45,8 @@ export default function MainPage() {
             </div>
             <div className="flex items-center flex-col gap-5 w-2/3">
               <h3 className="text-lg  md:text-3xl text-white font-bold">
-                A really curious Front-End Developer with some love for UX.
+                A really curious Developer with some love for UX and code in
+                general.
               </h3>
               <p className="text-lg font-serif text-white">
                 I&apos;m passionate about bringing both the technical and visual

@@ -10,13 +10,23 @@ export const projectsData = [
     id: 1,
   },
   {
-    title: "Sushi Restaurant Land Page 🍣",
+    title: "Nikel Todo",
     id: 2,
     description:
-      "A project where i was challenged to improve my basic habilities of web development, including HTML, CSS and Javascript, it was pretty cool to do because i learned a lot about CSS Animations.",
-    imagePath: "/sushi.png",
-    githubRepo: "https://github.com/marcossnikel/sushi_restaurant_page",
-    stacks: "javascript, html , css",
-    projectLink: "https://hokensushi.vercel.app/#home",
+      "Classic todo app using reactjs, you can have track of the amount of tasks and the amounf of completed tasks, it is a great app for productivity,you can set completed tasks or even remove if you missclick some task, improved a lot state management knowledge, form validation ,typescript.",
+    imagePath: "/todo.png",
+    githubRepo: "https://github.com/marcossnikel/nikel_todo",
+    stacks: "javascript,react,typescript html , css",
+    projectLink: "https://nikel-todo.vercel.app/",
+  },
+  {
+    title: "Ignite Feed",
+    id: 3,
+    description:
+      "Ignite feed is a social midia layout made following a figma layout to improve my reactjs skills, understand better about closures, form validation, state management, typescript in react",
+    imagePath: "/feed.png",
+    githubRepo: "https://github.com/marcossnikel/ignite_feed",
+    stacks: "html,css,js,typescript,react",
+    projectLink: "https://ignite-feed-eight-sepia.vercel.app/",
   },
 ];
