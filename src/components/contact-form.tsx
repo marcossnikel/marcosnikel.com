@@ -42,7 +42,7 @@ export default function ContactForm() {
       <input
         {...register("name", { required: "Please tell me your name :)" })}
         type="text"
-        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 w-full"
+        className="bg-cool text-txcolor placeholder:text-zinc-600 outline-none border-b-4 border-gray rounded-lg p-2 w-full"
         placeholder="name"
       />
       <input
@@ -54,13 +54,13 @@ export default function ContactForm() {
           },
         })}
         type="email"
-        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 w-full"
-        placeholder="email"
+        placeholder="username@email.com"
+        className="bg-cool text-txcolor placeholder:text-zinc-600 outline-none border-b-4 border-gray rounded-lg p-2 w-full"
       />
       <textarea
         {...register("message", { required: true, minLength: 20 })}
-        placeholder="message"
-        className="outline-none border-b-4 border-yellow-400 rounded-lg p-2 w-full"
+        placeholder="Hi Marcos, I really like your job, i thing i might have something for you!!"
+        className="outline-none text-txcolor placeholder:text-zinc-600 bg-cool border-b-4 border-gray rounded-lg p-2 w-full"
       />
       <Button text="Send Email !">
         <SiGmail />

@@ -16,27 +16,27 @@ export default function MainPage() {
     <div id="wrapper">
       <div id="home" className="p-10 bg-txcolor">
         <Container>
-          <h1 className="text-5xl font-mada text-yellow-400 text-center">
+          <h1 className="text-5xl font-mada text-cool text-center">
             <span className="text-6xl">
               I&apos;m <strong>Marcos</strong>
             </span>
-            <br />a <strong>Software Developer</strong>
+            <br />a <strong>Software Engineer</strong>
           </h1>
         </Container>
       </div>
 
       {/* About Section */}
-      <div id="about" className="bg-txcolor border-t-4 border-yellow-400 ">
+      <div id="about" className="bg-txcolor border-t-4 border-cool ">
         <Container>
-          <h2 className="text-4xl font-poppins text-yellow-400">ABOUT</h2>
-          <p className=" mt-2 text-xl font-crimson text-white ">
+          <h2 className="text-4xl font-poppins text-cool">ABOUT</h2>
+          <p className=" mt-2 text-xl font-crimson text-vintage ">
             Who is Marcos ?
           </p>
 
           <div className="flex flex-col gap-5 md:flex-row  justify-between ">
             <div className="mt-10">
               <Image
-                src="/me.png"
+                src="/profile.png"
                 alt="me"
                 className=" rounded-2xl "
                 width={350}
@@ -44,11 +44,11 @@ export default function MainPage() {
               />
             </div>
             <div className="flex items-center flex-col gap-5 w-2/3">
-              <h3 className="text-lg  md:text-3xl text-white font-bold">
-                A really curious Developer with some love for UX and code in
+              <h3 className="text-lg  md:text-3xl text-cool font-bold">
+                A really curious Software Engineer with some love for UX and code in
                 general.
               </h3>
-              <p className="text-lg font-serif text-white">
+              <p className="text-lg font-serif text-vintage">
                 I&apos;m passionate about bringing both the technical and visual
                 aspects of projects to life.I always love to think about the
                 user experience,the right metrics , and also clean and acessible
@@ -57,16 +57,16 @@ export default function MainPage() {
                 that less is more, following always the{" "}
                 <Link
                   href="http://lawsofsimplicity.com/"
-                  className="text-yellow-400 hover:text-txcolor hover:bg-yellow-400 transition-colors"
+                  className="text-cool hover:text-txcolor hover:bg-cool transition-colors"
                 >
                   Laws of Simplicity
                 </Link>
               </p>
-              <p className="text-lg font-serif text-white">
+              <p className="text-lg font-serif text-vintage">
                 I&apos;m a computer science student from the{" "}
                 <Link
                   href="https://www.anchieta.br/"
-                  className="text-yellow-400 hover:text-txcolor hover:bg-yellow-400 transition-colors"
+                  className="text-cool hover:text-txcolor hover:bg-cool transition-colors"
                 >
                   Anchieta University
                 </Link>
@@ -74,25 +74,25 @@ export default function MainPage() {
                 the certified of my skills from{" "}
                 <Link
                   href="https://www.algoexpert.io/frontend/product"
-                  className="text-yellow-400 hover:text-txcolor hover:bg-yellow-400 transition-colors"
+                  className="text-cool hover:text-txcolor hover:bg-cool transition-colors"
                 >
                   Front End Expert
                 </Link>{" "}
                 and also i learned a lot in{" "}
                 <Link
                   href="https://frontendmasters.com/"
-                  className="text-yellow-400 hover:text-txcolor hover:bg-yellow-400 transition-colors"
+                  className="text-cool hover:text-txcolor hover:bg-cool transition-colors"
                 >
                   Front End Masters
                 </Link>
               </p>
-              <p className="text-lg font-serif text-white">
+              <p className="text-lg font-serif text-vintage">
                 I love to create,learn, explore new ideas and topics and also
                 understand how to make the things i love in even better fashion.
                 I am currently doing a lot of challenges from{" "}
                 <Link
                   href="https://www.algoexpert.io/"
-                  className="text-white hover:text-txcolor hover:bg-yellow-400 transition-colors"
+                  className="text-vintage hover:text-txcolor hover:bg-cool transition-colors"
                 >
                   Algo Expert
                 </Link>{" "}
@@ -102,7 +102,7 @@ export default function MainPage() {
               </p>
               <a
                 href="#contact"
-                className=" text-yellow-400 hover:animate-bounce underline underline-offset-8 w-40 cursor-pointer font-mada text-2xl"
+                className=" text-cool hover:animate-bounce underline underline-offset-8 w-40 cursor-pointer font-mada text-2xl"
               >
                 Get In Touch !
               </a>
@@ -112,21 +112,21 @@ export default function MainPage() {
       </div>
 
       {/* Skills Section */}
-      <div id="skills" className="bg-txcolor border-t-4 border-yellow-400">
+      <div id="skills" className="bg-txcolor border-t-4 border-cool">
         <Container>
-          <h2 className="text-4xl font-poppins text-yellow-400">
+          <h2 className="text-4xl font-poppins text-cool">
             SKILLS & TOOLS
           </h2>
-          <p className=" mt-2 text-xl font-crimson text-white">My Toolbox</p>
+          <p className=" mt-2 text-xl font-crimson text-vintage">My Toolbox</p>
           <SkillsDisplay />
         </Container>
       </div>
 
       {/* my work (projects) */}
-      <div id="work" className="bg-txcolor border-t-4 border-yellow-400">
+      <div id="work" className="bg-txcolor border-t-4 border-cool">
         <Container>
-          <h2 className="text-4xl font-poppins text-yellow-400">WORK</h2>
-          <p className="mt-2 text-xl text-white font-crimson">
+          <h2 className="text-4xl font-poppins text-cool">WORK</h2>
+          <p className="mt-2 text-xl text-vintage font-crimson">
             A selection of stuff I built
           </p>
           {projectsData ? (
@@ -148,14 +148,14 @@ export default function MainPage() {
       </div>
 
       {/* contact */}
-      <div id="contact" className="bg-txcolor border-t-4 border-yellow-400">
+      <div id="contact" className="bg-txcolor border-t-4 border-cool">
         <Container>
-          <h2 className="text-4xl text-yellow-400 font-poppins">CONTACT</h2>
-          <span className="text-lg text-white font-crimson">Get In Touch</span>
-          <p className="text-xl text-white font-mada mt-2 leading-4">
+          <h2 className="text-4xl text-cool font-poppins">CONTACT</h2>
+          <span className="text-lg text-vintage font-crimson">Get In Touch</span>
+          <p className="text-xl text-vintage font-mada mt-2 leading-4">
             Lets chat, If you want my resume you can send-me a message or just{" "}
             <a
-              className="text-yellow-400 hover:underline cursor-pointer"
+              className="text-cool hover:underline cursor-pointer"
               // onClick={() => downloadResume()}
             >
               Click Here
@@ -164,7 +164,7 @@ export default function MainPage() {
             you.
           </p>
           <br />
-          <p className="text-white font-mada text-xl">
+          <p className="text-vintage font-mada text-xl">
             Fill in your info in the form below and i look forward to hearing
             for you.
           </p>

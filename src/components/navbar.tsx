@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <header className="flex z-10 flex-col justify-between md:flex-row bg-gray bg-opacity-95 sticky top-0 p-8">
+    <header className="flex z-10 flex-col justify-between md:flex-row bg-cool bg-opacity-95 sticky top-0 p-8">
       <h2 className="-tracking-tighter text-txcolor underline font-mono font-bold text-xl">
         <Link href="/">marcosnikel.com</Link>
       </h2>

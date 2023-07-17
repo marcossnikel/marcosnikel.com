@@ -17,7 +17,7 @@ export function ProjectContainer({
     >
       {id % 2 == 0 ? (
         <>
-          <div className="border border-yellow-400 rounded w-72 max-h-72 flex-1 md:h-96 md:w-96 relative">
+          <div className=" w-72 max-h-72 flex-1 md:h-96 md:w-96 relative">
             <Image
               src={imageUrl}
               alt="Project image"
@@ -26,13 +26,13 @@ export function ProjectContainer({
             />
           </div>
           <div className="flex flex-1 flex-col">
-            <h2 className="text-4xl font-crimson text-yellow-400">{title}</h2>
-            <p className="text-lg font-mada text-white">{description}</p>
+            <h2 className="text-4xl font-crimson text-cool">{title}</h2>
+            <p className="text-lg font-mada text-vintage">{description}</p>
             <div className="flex flex-col  gap-2 justify-between mt-2">
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-cool font-poppins p-2 text-txcolor   hover:border hover:border-cool hover:bg-txcolor hover:text-cool transition-all "
                 href={projectUrl}
               >
                 Project
@@ -40,7 +40,7 @@ export function ProjectContainer({
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-cool font-poppins p-2 text-txcolor   hover:border hover:border-cool hover:bg-txcolor hover:text-cool transition-all "
                 href={repositoryUrl}
               >
                 Repository
@@ -51,13 +51,13 @@ export function ProjectContainer({
       ) : (
         <>
           <div className="flex flex-1 flex-col">
-            <h2 className="text-4xl font-crimson text-yellow-400">{title}</h2>
-            <p className="text-lg font-mada text-white">{description}</p>
+            <h2 className="text-4xl font-crimson text-cool">{title}</h2>
+            <p className="text-lg font-mada text-vintage">{description}</p>
             <div className="flex flex-col  gap-2 justify-between mt-2">
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-cool font-poppins p-2 text-txcolor   hover:border hover:border-cool hover:bg-txcolor hover:text-cool transition-all "
                 href={projectUrl}
               >
                 Project
@@ -65,14 +65,14 @@ export function ProjectContainer({
               <a
                 rel="noreferrer nofollow"
                 target="_blank"
-                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-yellow-400 font-poppins p-2 text-txcolor   hover:border hover:border-yellow-400 hover:bg-txcolor hover:text-yellow-400 transition-all "
+                className="flex justify-around items-center min-w-min max-w-sm border rounded-lg bg-cool font-poppins p-2 text-txcolor   hover:border hover:border-cool hover:bg-txcolor hover:text-cool transition-all "
                 href={repositoryUrl}
               >
                 Repository
               </a>
             </div>
           </div>
-          <div className="rounded w-72 max-h-72 flex-1 md:h-96 md:w-96 relative border border-yellow-400 ">
+          <div className="rounded w-72 max-h-72 flex-1 md:h-96 md:w-96 relative border border-cool ">
             <Image
               src={imageUrl}
               alt="Project image"
