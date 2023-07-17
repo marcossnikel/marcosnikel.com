@@ -16,9 +16,10 @@ module.exports = {
         navy: "#537188",
         navy2: "#9db2bf",
         beige: "#cbb279",
-        vintage: "#e1d4bb",
-        gray: "#eeeeee",
-        txcolor: "#252525",
+        vintage: "#176B87",
+        gray: "#64CCC5",
+        txcolor: "#DAFFFB",
+        cool : "#001C30"
       },
       fontFamily: {
         poppins: ["Poppins"],
